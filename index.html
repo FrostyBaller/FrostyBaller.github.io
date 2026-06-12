@@ -3,19 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Game Hub</title>
+    <title>Arcade Hub</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #000; }
-        iframe { width: 100%; height: 100%; border: none; }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0b0c10;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .game-card {
+            background: #1f2833;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            border: 1px solid #45f3ff;
+        }
+        h1 {
+            margin-0: 0 0 10px 0;
+            font-size: 28px;
+            color: #45f3ff;
+        }
+        p {
+            color: #c5a6c1;
+            font-size: 15px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        .launch-btn {
+            display: inline-block;
+            padding: 14px 40px;
+            background: linear-gradient(135deg, #45f3ff, #0072ff);
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(69, 243, 255, 0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .launch-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(69, 243, 255, 0.5);
+        }
     </style>
 </head>
 <body>
 
-    <iframe 
-      src="https://veck.io/" 
-      allow="autoplay; fullscreen; pointer-lock" 
-      allowfullscreen>
-    </iframe>
+    <div class="game-card">
+        <h1>VECK.IO</h1>
+        <p>3D Multiplayer Shooter. Requires unrestricted mouse tracking and full-screen performance.</p>
+        <a href="https://veck.io/" target="_blank" rel="noopener noreferrer" class="launch-btn">
+            LAUNCH GAME ↗
+        </a>
+    </div>
 
 </body>
 </html>
